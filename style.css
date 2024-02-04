@@ -15,7 +15,7 @@ ul{
 
 
 .container{
-    width: 96%;
+    width: 100%;
     margin: 0px auto;
 }
 
@@ -95,7 +95,7 @@ ul{
     cursor: pointer;
     font-size: 25px;
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:992px) {
    
     .container #header .nav-div{
      
@@ -109,15 +109,30 @@ ul{
         display: block;
     }
     .container #header .header-text{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         text-align: center;
         display: flex;
         justify-content: center;
     }
 }
+@media screen and (max-width:768px) {
+    
+    .container #header .nav-div .navbars,.navbar-right{
+        display: none;
+    }
+
+    .container #header .input-box{
+        max-width: 90%;
+    }
+
+}
+
+
+
+
 
 .Container{
-    width: 96%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -196,6 +211,16 @@ ul{
     }
 }
 
+@media screen and ((min-width:576px) and (max-width:992px)  ){
+    .article-section .categories-box .category{
+        width: 47%;
+    }
+}
+
+
+
+
+
 .questions-section{
     margin-top: 50px;
 }
@@ -204,7 +229,7 @@ ul{
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
-    padding: 140px 200px;
+    padding: 140px 100px;
     gap:30px;
 }
 .questions-section .questions-wrapper .questions-left{
@@ -263,6 +288,7 @@ ul{
             width: 100%;
             /* border: 2px solid yellow; */
             padding-left: 20px;
+            margin-bottom: 30px;
         }
         .questions-section .questions-wrapper .questions-left h1{
             display: block;
